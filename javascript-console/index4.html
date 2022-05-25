@@ -15,9 +15,31 @@
             const joined = `${one}${two}`;
             console.log(joined);
             // concatenation using "+" //
-            console.log(greeting + ", " + name); 
             // const greeting = "Hello"; //
             // const name = "Chris"; //
+            console.log(greeting + ", " + name); 
+            // combine a string and a number //
+            // const name = "Front "; //
+            const number = 242;
+            console.log(`${name} ${number}`);
+            // The Number object converts anything passed to it into a number, if it can //
+            const myString = '123';
+            const myNum = Number(myString);
+            console.log(typeof myNum);
+            // Conversely, every number has a method called toString() that converts it to the equivalent string. //
+            const myNum2 = 123;
+            const myString2 = myNum2.toString();
+            console.log(typeof myString2);
+            // Including expressions in strings //
+            const song = 'Fight the Youth';
+            const score = 9;
+            const highestScore = 10;
+            const output = `I like the song ${song}. I gave it a score of ${score/highestScore * 100}%.`;
+                   // Multiline strings //
+                   'I like the song.\nI gave it a score of 90%.';
+            console.log(output); 
+     
+        
         </script>
     </body>
 </html>
