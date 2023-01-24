@@ -93,6 +93,58 @@ for (let i = 0; i < puppies.length; i++) {
 console.log(myFavoritePuppies);
 
 
+// Skipping iterations with continue
+// The continue statment terminates execution of statements in 
+// the current iteration of the current or labelled loop and 
+// continues execution of the loop with the next iteration
+
+let text = '';
+
+for (let i = 0; i < 10; i++) {
+    if (i === 5) {
+        continue;
+    }
+    text = text + i;
+}
+console.log(text);
+
+// Using continue with while
+
+let i = 0;
+let n = 0;
+
+while (i < 5) {
+    i++;
+
+    if (i === 3) {
+        continue;
+    }
+
+    n += i;
+}
+
+// Using continue with a label
+
+let k = 0;
+let j = 8;
+
+checkkandj: while (k < 4) {
+    console.log(`k: ${j}`);
+    k += 1;
+
+    checkj: while (j > 4) {
+        console.log(`j: ${j}`);
+        j -= 1;
+
+        if ( j % 2 === 0) continue 
+    checkj;
+        console.log(`${j} is odd.`);
+    }
+    console.log(`k = ${k}`);
+    console.log('j = ${j}');
+}
+
+
 
 
 
