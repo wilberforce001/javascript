@@ -123,26 +123,71 @@ while (i < 5) {
     n += i;
 }
 
-// Using continue with a label
+// while and do...while
 
-let k = 0;
-let j = 8;
 
-checkkandj: while (k < 4) {
-    console.log(`k: ${j}`);
-    k += 1;
+// while loop
+let dogs = ['Pete', 'Biggles', 'Jasmine'];
 
-    checkj: while (j > 4) {
-        console.log(`j: ${j}`);
-        j -= 1;
+let myFavoriteDogs = 'My dogs are called ';
 
-        if ( j % 2 === 0) continue 
-    checkj;
-        console.log(`${j} is odd.`);
+let m = 0;
+
+while (m < dogs.length) {
+    if (m === dogs.length - 1) {
+        myFavoriteDogs += `and ${dogs[m]}.`;
+    } else {
+        myFavoriteDogs += `${dogs[m]}, `;
     }
-    console.log(`k = ${k}`);
-    console.log('j = ${j}');
+
+    m++;
 }
+
+console.log(myFavoriteDogs);
+
+// Built-in browser functions 
+
+const myText = 'I am a string';
+const newString = myText.replace('string', 'sausage');
+console.log(newString);
+
+// Array manipulation
+
+// the join() function takes an array, joins
+// all the array items together into a single
+// string, and returns this new string
+
+const myArray = ['I', 'love', 'chocolate', 'frogs'];
+const madeAString = myArray.join('');
+console.log(madeAString)
+
+// Default parameters
+
+function hello(name = 'chris') {
+    console.log('Hello ${name}!');
+}
+hello('Ari')
+hello()
+
+// Anonymous functions and arrow functions
+
+function myFunction() {
+    alert('hello');
+}
+
+// Use the map() method of Array to double every value in the original array:
+// The map() method takes each item in the array in turn, 
+// passing it into the given function. It then takes the value returned by that function and adds it to a new array.
+
+
+const originals = [1, 2, 3];
+
+const doubled = originals.map( (item) => item*2);
+
+console.log(doubled);
+
+
+
 
 
 
