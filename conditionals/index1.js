@@ -122,3 +122,14 @@ switch (month) {
 	default:
 		console.log("Something went wrong.");
 }
+
+// Functions
+let userName = 'john';
+
+function showMessage() {
+	let message = 'Hello, ' + userName;
+	alert(message);
+
+}
+
+showMessage();

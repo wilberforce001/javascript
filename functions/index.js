@@ -187,9 +187,44 @@ const doubled = originals.map( (item) => item*2);
 console.log(doubled);
 
 
+// Using return values in your own functions
+
+function squared(num) {
+    return num * num;
+  }
+  
+  function cubed(num) {
+    return num * num * num;
+  }
+  
+  function factorial(num) {
+    if (num < 0) return undefined;
+    if (num === 0) return 1;
+    let x = num - 1;
+    while (x > 1) {
+      num *= x;
+      x--;
+    }
+    return num;
+  }
+
+  //
+  function favoriteAnimal(pet) {
+    return pet + " is my favorite animal!"
+  }
+  
+  console.log(favoriteAnimal('Goat'))
 
 
 
+// Local variables
+function showMessage() {
+    let message = "Hello, I'm JavaScript!";
+
+    alert( message );
+}
+showMessage();
+alert( message );
 
 
 
