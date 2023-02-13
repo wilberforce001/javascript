@@ -1,0 +1,11 @@
+.choiceBtn{
+    line-height: 30px;
+    width: 150px;
+}
+
+#playerText{
+    color: blue;
+}
+#computerText{
+    color: red;
+}
