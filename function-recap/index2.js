@@ -4,3 +4,4 @@ function getComputerChoice(game) {
 getComputerChoice('Rock')
 getComputerChoice('Paper')
 getComputerChoice('Scissors')
+
